@@ -23,3 +23,7 @@ The images are slightly flipped and zoomed in as part of the data augmentation p
 **Activation Function:** ReLU activation is used in the dense layers to help the model learn non-linear patterns efficiently and reduce the chance of vanishing gradients. The final output layer uses softmax activation because this is a multi-class classification problem with 101 food categories. Softmax converts the output values into probabilities for each class.
 
 **Early Stopping:** Early stopping is used to monitor val_loss. If the validation loss does not improve for 3 epochs, training stops automatically. There is the option helps restore the model weights from the epoch with the best validation loss. This helps prevent overfitting and keeps the best-performing version of the model.
+## Result evaluation
+The model achieved a test accuracy of 55.64%
+The confusion matrix of 25,250 test images:
+<img width="2550" height="2556" alt="image" src="https://github.com/user-attachments/assets/c13fd3e8-2741-4f7b-840d-9f39a3f72c79" />
